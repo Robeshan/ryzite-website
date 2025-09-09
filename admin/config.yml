@@ -1,26 +1,18 @@
 backend:
-  name: git-gateway
-  branch: main  # or your default branch
+  name: github
+  repo: Robeshan/ryzite-website   # replace with your GitHub repo
+  branch: main                         # or 'master' if your repo uses that
 
-media_folder: "static/img"  # folder for uploaded media (adjust path)
-public_folder: "/img"       # public URL access to media
+media_folder: "static/img/uploads"     # where images will be stored in repo
+public_folder: "/img/uploads"          # path CMS uses in your site
 
 collections:
   - name: "pages"
     label: "Pages"
-    folder: "content/pages" # folder for page markdown files
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+    files:
+      - label: "Home Page"
+        name: "index"
+        file: "index.html"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
