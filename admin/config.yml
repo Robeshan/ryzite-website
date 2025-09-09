@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: Robeshan/ryzite-website
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Homepage"
+        name: "home"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "body", widget: "markdown"}
+
+          backend:
+  name: git-gateway
+  branch: main
+
