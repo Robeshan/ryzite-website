@@ -12,6 +12,14 @@ window.addEventListener('load', () => {
         }, index * 150);
     });
 });
+
+//admin dashboard Toke
+  if (window.location.hash.includes('invite_token=')) {
+    const token = window.location.hash.split('invite_token=')[1];
+    window.location.href = `/admin/#invite_token=${token}`;
+  }
+
+
 // Mobile Navigation Toggle
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
