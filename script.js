@@ -1,28 +1,3 @@
-// Loading Screen
-// Mobile Menu Toggle
-
-window.addEventListener('load', () => {
-    const loadingScreen = document.getElementById('loadingScreen');
-    setTimeout(() => {
-        loadingScreen.classList.add('hidden');
-        document.body.style.overflow = 'visible';
-        
-        // Trigger hero animations after loading
-        setTimeout(() => {
-            const heroElements = document.querySelectorAll('.hero-badge, .hero-title, .hero-subtitle, .hero-stats, .hero-buttons, .hero-trust');
-            heroElements.forEach((el, index) => {
-                setTimeout(() => {
-                    el.style.opacity = '1';
-                    el.style.transform = 'translateY(0)';
-                }, index * 150);
-            });
-        }, 300);
-    }, 2500);
-});
-
-// Initially hide body overflow during loading
-document.body.style.overflow = 'hidden';
-
 // Mobile Navigation Toggle
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
@@ -41,8 +16,6 @@ if (hamburger && navMenu) {
         });
     });
 }
-
-
 
 // Smooth scrolling for navigation links
 function scrollToSection(sectionId) {
@@ -321,7 +294,7 @@ function requestParallaxUpdate() {
 
 window.addEventListener('scroll', requestParallaxUpdate);
 
-// Add dynamic navbar background
+// Add dynamic navbar background and hide/show effect on scroll
 let lastScrollTop = 0;
 
 window.addEventListener('scroll', () => {
