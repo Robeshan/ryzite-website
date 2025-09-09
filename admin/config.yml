@@ -1,17 +1,26 @@
 backend:
   name: git-gateway
-  branch: main   # or 'master' if that is your default branch
+  branch: main  # or your default branch
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "static/img"  # folder for uploaded media (adjust path)
+public_folder: "/img"       # public URL access to media
 
 collections:
   - name: "pages"
     label: "Pages"
-    files:
-      - file: "index.html"
-        label: "Homepage"
-        name: "home"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Content", name: "body", widget: "markdown" }
+    folder: "content/pages" # folder for page markdown files
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
