@@ -1003,6 +1003,13 @@
         </div>
     </footer>
 
+<!-- admin dashboard Toke -->
+<script>
+  if (window.location.hash.includes('invite_token=')) {
+    const token = window.location.hash.split('invite_token=')[1];
+    window.location.href = `/admin/#invite_token=${token}`;
+  }
+</script>
     <script src="script.js"></script>
 </body>
 </html>
