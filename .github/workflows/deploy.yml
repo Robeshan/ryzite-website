@@ -3,11 +3,12 @@ name: 🚀 Deploy Website
 on:
   push:
     branches:
-      - main   # or 'master' if your default branch is master
+      - main   # change to 'master' if that's your default branch
 
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -18,4 +19,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_PATH }}
+          server-dir: ${{ secrets.FTP_PATH }}/   # <-- trailing slash required
