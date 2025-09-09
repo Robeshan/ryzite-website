@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: Robeshan/ryzite-website   # replace with your GitHub repo
-  branch: main                         # or 'master' if your repo uses that
+  repo: Robeshan/ryzite-website
+  branch: main                        # or 'master' if your repo uses that
 
 media_folder: "static/img/uploads"     # where images will be stored in repo
 public_folder: "/img/uploads"          # path CMS uses in your site
