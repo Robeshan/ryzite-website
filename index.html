@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ryzite - Premium Digital Marketing Agency | Transform Your Business</title>
+    <meta name="description" content="Elevate your digital presence with Ryzite's premium marketing solutions. Expert SEO, Social Media Marketing, Google Ads & more.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="logo.svg" alt="Ryzite Logo" width="80" height="80" class="loading-logo-img" style="padding: 80px 100px 5px 4px;">
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <img src="logo.png" alt="Ryzite Logo" width="300" height="200" style="padding: 10px;">
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-cta">
+                <button class="btn btn-primary btn-small">Get Started</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-gradient-orb orb-1"></div>
+            <div class="hero-gradient-orb orb-2"></div>
+            <div class="hero-gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Premium Digital Marketing Agency</span>
+                </div>
+                <h1 class="hero-title">
+                    Transform Your Business with 
+                    <span class="text-gradient">Ryzite</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Unlock explosive growth with our data-driven digital marketing strategies. 
+                    From viral social media campaigns to SEO domination, we deliver measurable results that scale your business.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Clients Served</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">300%</span>
+                        <span class="stat-label">Avg Growth</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('services')">
+                        <i class="fas fa-rocket"></i>
+                        Explore Services
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-phone"></i>
+                        Get Free Consultation
+                    </button>
+                </div>
+                <div class="hero-trust">
+                    <p>Trusted by industry leaders</p>
+                    <div class="trust-badges">
+                        <div class="trust-badge">Google Partner</div>
+                        <div class="trust-badge">Meta Certified</div>
+                        <div class="trust-badge">Shopify Expert</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="main-dashboard">
+                        <div class="dashboard-header">
+                            <div class="dashboard-title">Analytics Dashboard</div>
+                            <div class="dashboard-status">
+                                <div class="status-dot"></div>
+                                <span>Live</span>
+                            </div>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="metric">
+                                <span class="metric-label">Revenue</span>
+                                <span class="metric-value">+247%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Traffic</span>
+                                <span class="metric-value">+189%</span>
+                            </div>
+                            <div class="chart-area">
+                                <div class="chart-bar" style="height: 60%"></div>
+                                <div class="chart-bar" style="height: 80%"></div>
+                                <div class="chart-bar" style="height: 100%"></div>
+                                <div class="chart-bar" style="height: 75%"></div>
+                                <div class="chart-bar" style="height: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <i class="fas fa-chart-line"></i>
+                        <span>SEO Growth</span>
+                        <div class="card-metric">+300%</div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fab fa-instagram"></i>
+                        <span>Social Media</span>
+                        <div class="card-metric">2M+ Reach</div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-bullhorn"></i>
+                        <span>Digital Ads</span>
+                        <div class="card-metric">5x ROAS</div>
+                    </div>
+                    <div class="floating-card card-4">
+                        <i class="fas fa-users"></i>
+                        <span>Conversions</span>
+                        <div class="card-metric">+450%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-background">
+            <div class="bg-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-crown"></i>
+                    <span>Premium Services</span>
+                </div>
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">Comprehensive digital marketing solutions designed to accelerate your business growth and maximize ROI</p>
+            </div>
+
+            <!-- Social Media Marketing Plans -->
+            <div class="service-category">
+                <div class="category-header">
+                    <h3 class="category-title">
+                        <i class="fab fa-instagram"></i>
+                        Social Media Marketing Plans
+                    </h3>
+                    <p class="category-subtitle">Build your brand presence and engage with your audience across all major platforms</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card silver">
+                        <div class="pricing-header">
+                            <h4>SILVER</h4>
+                            <span class="plan-type">Starter</span>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">99</span>
+                                <span class="period">/Monthly</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <p class="plan-description">Perfect for businesses just starting out with social media marketing.</p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> 6 Posts Per Month</li>
+                                <li><i class="fas fa-check"></i> Caption Writing</li>
+                                <li><i class="fas fa-check"></i> Content Creation</li>
+                                <li><i class="fas fa-check"></i> Hashtag Research</li>
+                                <li><i class="fas fa-check"></i> Customer Interaction</li>
+                                <li><i class="fas fa-check"></i> Monthly Report</li>
+                                <li><i class="fas fa-check"></i> Social Media Maintenance</li>
+                                <li><i class="fas fa-check"></i> 2 Social Media Platforms</li>
+                                <li><i class="fas fa-check"></i> 1 Ad Campaign Per Month (Setup Only)</li>
+                                <li><i class="fas fa-check"></i> 1 Video Per Month</li>
+                                <li><i class="fas fa-check"></i> Competitor Research</li>
+                                <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                                <li><i class="fas fa-check"></i> Spam Monitoring</li>
+                                <li><i class="fas fa-check"></i> Audit & Analysis</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline">Choose Silver</button>
+                    </div>
+
+                    <div class="pricing-card gold featured">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h4>GOLD</h4>
+                            <span class="plan-type">Intermediate</span>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">179</span>
+                                <span class="period">/Monthly</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <p class="plan-description">Ideal for businesses looking to expand their social media presence and engagement.</p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> 10 Posts Per Month</li>
+                                <li><i class="fas fa-check"></i> Caption Writing</li>
+                                <li><i class="fas fa-check"></i> Content Creation</li>
+                                <li><i class="fas fa-check"></i> Hashtag Research</li>
+                                <li><i class="fas fa-check"></i> Customer Interaction</li>
+                                <li><i class="fas fa-check"></i> Monthly Report</li>
+                                <li><i class="fas fa-check"></i> Social Media Maintenance</li>
+                                <li><i class="fas fa-check"></i> 2 Social Media Platforms</li>
+                                <li><i class="fas fa-check"></i> 2 Ad Campaigns Per Month (Setup Only)</li>
+                                <li><i class="fas fa-check"></i> 1 Video Per Month</li>
+                                <li><i class="fas fa-check"></i> Competitor Research</li>
+                                <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                                <li><i class="fas fa-check"></i> Spam Monitoring</li>
+                                <li><i class="fas fa-check"></i> Audit & Analysis</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary">Choose Gold</button>
+                    </div>
+
+                    <div class="pricing-card platinum">
+                        <div class="pricing-header">
+                            <h4>PLATINUM</h4>
+                            <span class="plan-type">Professional</span>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">279</span>
+                                <span class="period">/Monthly</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <p class="plan-description">For established businesses wanting to maximize their digital marketing efforts.</p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> 15 Posts Per Month</li>
+                                <li><i class="fas fa-check"></i> Caption Writing</li>
+                                <li><i class="fas fa-check"></i> Content Creation</li>
+                                <li><i class="fas fa-check"></i> Hashtag Research</li>
+                                <li><i class="fas fa-check"></i> Customer Interaction</li>
+                                <li><i class="fas fa-check"></i> Monthly Report</li>
+                                <li><i class="fas fa-check"></i> Social Media Maintenance</li>
+                                <li><i class="fas fa-check"></i> 3 Social Media Platforms</li>
+                                <li><i class="fas fa-check"></i> 4 Ad Campaigns Per Month (Setup Only)</li>
+                                <li><i class="fas fa-check"></i> 2 Videos Per Month</li>
+                                <li><i class="fas fa-check"></i> Competitor Research</li>
+                                <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                                <li><i class="fas fa-check"></i> Spam Monitoring</li>
+                                <li><i class="fas fa-check"></i> Audit & Analysis</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline">Choose Platinum</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEO Plans -->
+            <div class="service-category">
+                <div class="category-header">
+                    <h3 class="category-title">
+                        <i class="fas fa-search"></i>
+                        Premium SEO Plans
+                    </h3>
+                    <p class="category-subtitle">Dominate search results and drive organic traffic with our advanced SEO strategies</p>
+                </div>
+                <div class="pricing-grid seo-grid">
+                    <div class="pricing-card gold seo-card">
+                        <div class="pricing-header">
+                            <h4>GOLD</h4>
+                            <span class="plan-type">Intermediate</span>
+                            <div class="price">
+                                <span class="original-price">$400</span>
+                                <span class="currency">$</span>
+                                <span class="amount">299</span>
+                                <span class="period">/Monthly</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <p class="plan-description">Perfect for businesses aiming to improve their SEO performance with essential optimizations.</p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> 10 Targeted Keywords Optimization</li>
+                                <li><i class="fas fa-check"></i> Backlink Creation for Keyword Ranking</li>
+                                <li><i class="fas fa-check"></i> Title Tag Optimization (with PDF Report)</li>
+                                <li><i class="fas fa-check"></i> Meta Tag Optimization</li>
+                                <li><i class="fas fa-check"></i> Alt Tag Optimization</li>
+                                <li><i class="fas fa-check"></i> Anchor Tag Optimization</li>
+                                <li><i class="fas fa-check"></i> H1 to H6 Optimization</li>
+                                <li><i class="fas fa-check"></i> Image Optimization</li>
+                                <li><i class="fas fa-check"></i> Page Size Optimization</li>
+                                <li><i class="fas fa-check"></i> Robots.txt Optimization</li>
+                                <li><i class="fas fa-check"></i> Google Sitemap Creation</li>
+                                <li><i class="fas fa-check"></i> W3C Validations</li>
+                                <li><i class="fas fa-check"></i> Keyword Density Analysis</li>
+                                <li><i class="fas fa-check"></i> Local Directory Submission</li>
+                                <li><i class="fas fa-check"></i> Link Building</li>
+                                <li><i class="fas fa-check"></i> Article Submission</li>
+                                <li><i class="fas fa-check"></i> Blog Posting</li>
+                                <li><i class="fas fa-check"></i> Blog Optimization</li>
+                                <li><i class="fas fa-check"></i> Social Bookmarking</li>
+                                <li><i class="fas fa-check"></i> Backlink Creation</li>
+                                <li><i class="fas fa-check"></i> Content Optimization</li>
+                                <li><i class="fas fa-check"></i> Loading Time Optimization</li>
+                                <li><i class="fas fa-check"></i> Navigation Optimization</li>
+                                <li><i class="fas fa-check"></i> Press Release Submission</li>
+                                <li><i class="fas fa-check"></i> Blog Commenting</li>
+                                <li><i class="fas fa-check"></i> And Many More...</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary">Choose Gold SEO</button>
+                    </div>
+
+                    <div class="pricing-card platinum seo-card">
+                        <div class="pricing-header">
+                            <h4>PLATINUM</h4>
+                            <span class="plan-type">Professional</span>
+                            <div class="price">
+                                <span class="original-price">$550</span>
+                                <span class="currency">$</span>
+                                <span class="amount">449</span>
+                                <span class="period">/Monthly</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <p class="plan-description">For businesses looking for comprehensive SEO strategies and greater keyword reach.</p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> 25 Targeted Keywords Optimization</li>
+                                <li><i class="fas fa-check"></i> Backlink Creation for Keyword Ranking</li>
+                                <li><i class="fas fa-check"></i> Title Tag Optimization (with PDF Report)</li>
+                                <li><i class="fas fa-check"></i> Meta Tag Optimization</li>
+                                <li><i class="fas fa-check"></i> Alt Tag Optimization</li>
+                                <li><i class="fas fa-check"></i> Anchor Tag Optimization</li>
+                                <li><i class="fas fa-check"></i> H1 to H6 Optimization</li>
+                                <li><i class="fas fa-check"></i> Image Optimization</li>
+                                <li><i class="fas fa-check"></i> Page Size Optimization</li>
+                                <li><i class="fas fa-check"></i> Robots.txt Optimization</li>
+                                <li><i class="fas fa-check"></i> Google Sitemap Creation</li>
+                                <li><i class="fas fa-check"></i> W3C Validations</li>
+                                <li><i class="fas fa-check"></i> Keyword Density Analysis</li>
+                                <li><i class="fas fa-check"></i> Local Directory Submission</li>
+                                <li><i class="fas fa-check"></i> Link Building</li>
+                                <li><i class="fas fa-check"></i> Article Submission</li>
+                                <li><i class="fas fa-check"></i> Blog Posting</li>
+                                <li><i class="fas fa-check"></i> Blog Optimization</li>
+                                <li><i class="fas fa-check"></i> Social Bookmarking</li>
+                                <li><i class="fas fa-check"></i> Backlink Creation</li>
+                                <li><i class="fas fa-check"></i> Content Optimization</li>
+                                <li><i class="fas fa-check"></i> Loading Time Optimization</li>
+                                <li><i class="fas fa-check"></i> Navigation Optimization</li>
+                                <li><i class="fas fa-check"></i> Press Release Submission</li>
+                                <li><i class="fas fa-check"></i> Blog Commenting</li>
+                                <li><i class="fas fa-check"></i> And Many More...</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline">Choose Platinum SEO</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="service-category">
+                <div class="category-header">
+                    <h3 class="category-title">
+                        <i class="fas fa-plus-circle"></i>
+                        Additional Premium Services
+                    </h3>
+                    <p class="category-subtitle">Comprehensive digital solutions to complete your marketing ecosystem</p>
+                </div>
+                <div class="additional-services">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <h4>Google Ads Campaign</h4>
+                        <p>Maximize your online presence by placing your business in front of customers actively searching for your products or services.</p>
+                        <div class="service-features">
+                            <span>Campaign Setup & Optimization</span>
+                            <span>Keyword Research & Targeting</span>
+                            <span>Performance Tracking</span>
+                        </div>
+                        <button class="btn btn-small">Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fab fa-shopify"></i>
+                        </div>
+                        <h4>Shopify Ads Campaign</h4>
+                        <p>Generate more sales and attract customers through well-optimized Shopify ads.</p>
+                        <div class="service-features">
+                            <span>Product Listings & Ad Setup</span>
+                            <span>Audience Targeting</span>
+                            <span>Conversion Tracking</span>
+                        </div>
+                        <button class="btn btn-small">Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <h4>Meta Ads Campaign</h4>
+                        <p>Reach a broader audience and engage with potential customers on Facebook & Instagram.</p>
+                        <div class="service-features">
+                            <span>Campaign Strategy & Setup</span>
+                            <span>Audience Segmentation</span>
+                            <span>A/B Testing</span>
+                        </div>
+                        <button class="btn btn-small">Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Website Development</h4>
+                        <p>Build a professional, responsive, and user-friendly website for your business.</p>
+                        <div class="service-features">
+                            <span>Custom Website Design</span>
+                            <span>Responsive Development</span>
+                            <span>SEO-Friendly Structure</span>
+                        </div>
+                        <button class="btn btn-small">Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Marketing</h4>
+                        <p>Reach your customers directly with personalized, targeted, and well-crafted email campaigns.</p>
+                        <div class="service-features">
+                            <span>Email Campaign Strategy</span>
+                            <span>Automated Campaigns</span>
+                            <span>Analytics & Reporting</span>
+                        </div>
+                        <button class="btn btn-small">Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4>Analytics & Reporting</h4>
+                        <p>Get detailed insights into your marketing performance with comprehensive analytics and custom reports.</p>
+                        <div class="service-features">
+                            <span>Performance Tracking</span>
+                            <span>Custom Dashboards</span>
+                            <span>ROI Analysis</span>
+                        </div>
+                        <button class="btn btn-small">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-trophy"></i>
+                    <span>Success Stories</span>
+                </div>
+                <h2 class="section-title">Our Success Stories</h2>
+                <p class="section-subtitle">Real results from real clients - discover how we've transformed businesses across industries</p>
+            </div>
+            
+            <!-- Results Overview -->
+            <div class="results-overview">
+                <div class="result-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                </div>
+                <div class="result-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="300">0</span>
+                        <span class="stat-plus">%</span>
+                        <span class="stat-label">Average Growth</span>
+                    </div>
+                </div>
+                <div class="result-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-plus">%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+                <div class="result-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-plus">M+</span>
+                        <span class="stat-label">Revenue Generated</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-badge">
+                        <i class="fas fa-crown"></i>
+                        <span>Featured</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce Growth">
+                        <div class="project-overlay">
+                            <h4>E-commerce Growth</h4>
+                            <p>300% increase in online sales</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>E-commerce Success Story</h4>
+                        <p>Transformed an online retailer's digital presence with comprehensive SEO and social media marketing.</p>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>6 Months</span>
+                            </div>
+                            <div class="project-detail">
+                                <i class="fas fa-tag"></i>
+                                <span>E-commerce</span>
+                            </div>
+                        </div>
+                        <div class="project-stats">
+                            <span>+300% Sales</span>
+                            <span>+150% Traffic</span>
+                            <span>+200% ROI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Local Business">
+                        <div class="project-overlay">
+                            <h4>Local Business</h4>
+                            <p>250% more local customers</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Local SEO Domination</h4>
+                        <p>Helped a local restaurant chain dominate search results and increase foot traffic significantly.</p>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>4 Months</span>
+                            </div>
+                            <div class="project-detail">
+                                <i class="fas fa-tag"></i>
+                                <span>Restaurant</span>
+                            </div>
+                        </div>
+                        <div class="project-stats">
+                            <span>+250% Customers</span>
+                            <span>+400% Online Orders</span>
+                            <span>+180% Revenue</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Social Media Campaign">
+                        <div class="project-overlay">
+                            <h4>Social Media Campaign</h4>
+                            <p>500% engagement increase</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Viral Social Media Campaign</h4>
+                        <p>Created engaging content that boosted brand awareness and customer engagement across all platforms.</p>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>3 Months</span>
+                            </div>
+                            <div class="project-detail">
+                                <i class="fas fa-tag"></i>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <div class="project-stats">
+                            <span>+500% Engagement</span>
+                            <span>+200% Followers</span>
+                            <span>2M+ Reach</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SaaS Growth">
+                        <div class="project-overlay">
+                            <h4>SaaS Growth</h4>
+                            <p>400% user acquisition increase</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>SaaS User Acquisition</h4>
+                        <p>Scaled a SaaS platform from startup to market leader through strategic digital marketing campaigns.</p>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>8 Months</span>
+                            </div>
+                            <div class="project-detail">
+                                <i class="fas fa-tag"></i>
+                                <span>SaaS</span>
+                            </div>
+                        </div>
+                        <div class="project-stats">
+                            <span>+400% Users</span>
+                            <span>+350% MRR</span>
+                            <span>+280% Leads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog and Case Studies Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-blog"></i>
+                    <span>Insights & Success Stories</span>
+                </div>
+                <h2 class="section-title">Latest <span class="text-gradient">Blog & Case Studies</span></h2>
+                <p class="section-subtitle">Discover actionable insights, industry trends, and real success stories from our clients who achieved remarkable growth.</p>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-badge">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Case Study</span>
+                    </div>
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=400" alt="E-commerce Success Story">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                Dec 15, 2024
+                            </span>
+                            <span class="blog-category">E-commerce</span>
+                        </div>
+                        <h4>How We Increased E-commerce Sales by 340%</h4>
+                        <p>Discover how our comprehensive digital marketing strategy helped a Shopify store achieve remarkable growth in just 6 months.</p>
+                        <div class="blog-stats">
+                            <div class="blog-stat">
+                                <span class="stat-number">340%</span>
+                                <span class="stat-label">Sales Increase</span>
+                            </div>
+                            <div class="blog-stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Months</span>
+                            </div>
+                        </div>
+                        <a href="#" class="blog-link">Read Full Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-badge">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Blog Post</span>
+                    </div>
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=400" alt="SEO Trends 2024">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                Dec 12, 2024
+                            </span>
+                            <span class="blog-category">SEO</span>
+                        </div>
+                        <h4>Top 10 SEO Trends to Watch in 2024</h4>
+                        <p>Stay ahead of the competition with these essential SEO strategies and algorithm updates that will shape search rankings.</p>
+                        <div class="blog-stats">
+                            <div class="blog-stat">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">Key Trends</span>
+                            </div>
+                            <div class="blog-stat">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Min Read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-badge">
+                        <i class="fas fa-trophy"></i>
+                        <span>Case Study</span>
+                    </div>
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Social Media Success">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                Dec 10, 2024
+                            </span>
+                            <span class="blog-category">Social Media</span>
+                        </div>
+                        <h4>From 0 to 100K Followers: Social Media Success</h4>
+                        <p>Learn how we built a massive social media following and generated $50K in revenue through strategic content marketing.</p>
+                        <div class="blog-stats">
+                            <div class="blog-stat">
+                                <span class="stat-number">100K</span>
+                                <span class="stat-label">Followers</span>
+                            </div>
+                            <div class="blog-stat">
+                                <span class="stat-number">$50K</span>
+                                <span class="stat-label">Revenue</span>
+                            </div>
+                        </div>
+                        <a href="#" class="blog-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-quote-left"></i>
+                    <span>Client Reviews</span>
+                </div>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Don't just take our word for it - hear from businesses we've helped transform</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Ryzite transformed our online presence completely. Our sales increased by 300% in just 6 months. Their team is professional, responsive, and delivers exceptional results."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150" alt="John Smith">
+                        <div class="author-info">
+                            <h5>John Smith</h5>
+                            <span>CEO, TechStart Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The SEO results speak for themselves. We went from page 3 to ranking #1 for our main keywords. The ROI has been incredible and continues to grow month over month."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Maria Garcia">
+                        <div class="author-info">
+                            <h5>Maria Garcia</h5>
+                            <span>Marketing Director, GrowthCo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Their social media campaigns went viral and brought us thousands of new customers. The creative content and strategic approach exceeded all our expectations."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Alex Thompson">
+                        <div class="author-info">
+                            <h5>Alex Thompson</h5>
+                            <span>Founder, StyleHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="section-badge">
+                        <i class="fas fa-rocket"></i>
+                        <span>Get Started</span>
+                    </div>
+                    <h2 class="section-title">Ready to Transform Your Business?</h2>
+                    <p class="section-subtitle">Let's discuss how we can accelerate your growth with our premium digital marketing solutions.</p>
+                    
+                    <div class="contact-features">
+                        <div class="contact-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free Strategy Consultation</span>
+                        </div>
+                        <div class="contact-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Custom Growth Plan</span>
+                        </div>
+                        <div class="contact-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No Long-term Contracts</span>
+                        </div>
+                        <div class="contact-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email Us</h4>
+                                <p>hello@ryzite.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="social-media">Social Media Marketing</option>
+                                <option value="seo">SEO Services</option>
+                                <option value="google-ads">Google Ads</option>
+                                <option value="meta-ads">Meta Ads</option>
+                                <option value="shopify-ads">Shopify Ads</option>
+                                <option value="website-dev">Website Development</option>
+                                <option value="email-marketing">Email Marketing</option>
+                                <option value="all-services">All Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Monthly Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-500">Under $500</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2500">$1,000 - $2,500</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000-plus">$5,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about your goals</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Describe your business goals and how we can help you achieve them..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-rocket"></i>
+                            Get Free Consultation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>RYZITE</h3>
+                    <p>Transforming businesses through innovative digital marketing strategies that deliver exceptional ROI and sustainable growth.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Social Media Marketing</a></li>
+                        <li><a href="#services">SEO Services</a></li>
+                        <li><a href="#services">Google Ads</a></li>
+                        <li><a href="#services">Meta Ads</a></li>
+                        <li><a href="#services">Website Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@ryzite.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>New York, NY 10001</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Ryzite Digital Marketing Agency. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
