@@ -21,8 +21,10 @@ const navMenu = document.getElementById('nav-menu');
 
 if (hamburger && navMenu) {
     hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
+        const isActive = hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
+        // update aria-expanded for accessibility
+        try { hamburger.setAttribute('aria-expanded', String(isActive)); } catch (e) {}
     });
     
     // Close mobile menu when clicking a nav link
@@ -30,6 +32,7 @@ if (hamburger && navMenu) {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            try { hamburger.setAttribute('aria-expanded', 'false'); } catch (e) {}
         });
     });
 }

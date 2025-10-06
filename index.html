@@ -9,6 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Preconnect to improve font load performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- Canonical & Open Graph (basic) -->
+    <!-- Assumption: site is hosted at https://www.ryzite.com - update if different -->
+    <link rel="canonical" href="https://www.ryzite.com/">
+    <meta property="og:title" content="Ryzite - Premium Digital Marketing Agency | Transform Your Business">
+    <meta property="og:description" content="Elevate your digital presence with Ryzite's premium marketing solutions. Expert SEO, Social Media Marketing, Google Ads & more.">
+    <meta property="og:image" content="https://www.ryzite.com/logo.png">
+    <meta property="og:url" content="https://www.ryzite.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#1e40af">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-40N9NTJ347"></script>
 <script>
@@ -26,7 +41,7 @@
             <div class="nav-logo">
                 <div class="logo-container">
                     <div class="logo-icon">
-                        <img src="logo.png" alt="Ryzite Logo" width="300" height="200" style="padding: 10px;">
+                        <img src="logo.png" alt="Ryzite Logo" width="300" height="200" style="padding: 10px;" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -48,11 +63,11 @@
             <div class="nav-cta">
                 <button class="btn btn-primary btn-small">Get Started</button>
             </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="hamburger" id="hamburger" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
         </div>
     </nav>
 
@@ -549,7 +564,7 @@
                         <span>Featured</span>
                     </div>
                     <div class="project-image">
-                        <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce Growth">
+                        <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce Growth" loading="lazy">
                         <div class="project-overlay">
                             <h4>E-commerce Growth</h4>
                             <p>300% increase in online sales</p>
@@ -577,7 +592,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Local Business">
+                        <img src="https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Local Business" loading="lazy">
                         <div class="project-overlay">
                             <h4>Local Business</h4>
                             <p>250% more local customers</p>
@@ -605,7 +620,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Social Media Campaign">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Social Media Campaign" loading="lazy">
                         <div class="project-overlay">
                             <h4>Social Media Campaign</h4>
                             <p>500% engagement increase</p>
@@ -633,7 +648,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SaaS Growth">
+                        <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SaaS Growth" loading="lazy">
                         <div class="project-overlay">
                             <h4>SaaS Growth</h4>
                             <p>400% user acquisition increase</p>
@@ -682,7 +697,7 @@
                         <span>Case Study</span>
                     </div>
                     <div class="blog-image">
-                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=400" alt="E-commerce Success Story">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=400" alt="E-commerce Success Story" loading="lazy">
                     </div>
                     <div class="blog-info">
                         <div class="blog-meta">
@@ -714,7 +729,7 @@
                         <span>Blog Post</span>
                     </div>
                     <div class="blog-image">
-                        <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=400" alt="SEO Trends 2024">
+                        <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=400" alt="SEO Trends 2024" loading="lazy">
                     </div>
                     <div class="blog-info">
                         <div class="blog-meta">
@@ -746,7 +761,7 @@
                         <span>Case Study</span>
                     </div>
                     <div class="blog-image">
-                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Social Media Success">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Social Media Success" loading="lazy">
                     </div>
                     <div class="blog-info">
                         <div class="blog-meta">
@@ -799,7 +814,7 @@
                     </div>
                     <p class="testimonial-text">"Ryzite transformed our online presence completely. Our sales increased by 300% in just 6 months. Their team is professional, responsive, and delivers exceptional results."</p>
                     <div class="testimonial-author">
-                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150" alt="John Smith">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150" alt="John Smith" loading="lazy">
                         <div class="author-info">
                             <h5>John Smith</h5>
                             <span>CEO, TechStart Inc.</span>
@@ -816,7 +831,7 @@
                     </div>
                     <p class="testimonial-text">"The SEO results speak for themselves. We went from page 3 to ranking #1 for our main keywords. The ROI has been incredible and continues to grow month over month."</p>
                     <div class="testimonial-author">
-                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Maria Garcia">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Maria Garcia" loading="lazy">
                         <div class="author-info">
                             <h5>Maria Garcia</h5>
                             <span>Marketing Director, GrowthCo</span>
@@ -833,7 +848,7 @@
                     </div>
                     <p class="testimonial-text">"Their social media campaigns went viral and brought us thousands of new customers. The creative content and strategic approach exceeded all our expectations."</p>
                     <div class="testimonial-author">
-                        <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Alex Thompson">
+                        <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Alex Thompson" loading="lazy">
                         <div class="author-info">
                             <h5>Alex Thompson</h5>
                             <span>Founder, StyleHub</span>
