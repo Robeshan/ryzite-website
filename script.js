@@ -435,3 +435,52 @@ const debouncedScrollHandler = debounce(() => {
     highlightNavigation();
     handleScrollAnimation();
 }, 16); // ~60fps
+
+// WhatsApp CTA handlers for 'Choose' and 'Learn More' buttons
+(() => {
+    const WHATSAPP_NUMBER = '+94726508419';
+
+    function openWhatsApp(message) {
+        // Use wa.me link for both mobile and desktop WhatsApp Web
+        const text = encodeURIComponent(message);
+        const url = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^\d]/g, '')}?text=${text}`;
+        window.open(url, '_blank', 'noopener');
+    }
+
+    function getServiceNameFromButton(btn) {
+        // Look for a nearby heading (h4, h3, h2) or data-service attribute
+        if (btn.dataset && btn.dataset.service) return btn.dataset.service;
+
+        let el = btn;
+        // traverse up to container then search for headings
+        for (let i = 0; i < 4 && el; i++) {
+            // look for headings inside the same container
+            const heading = el.querySelector && (el.querySelector('h4') || el.querySelector('h3') || el.querySelector('h2'));
+            if (heading && heading.textContent.trim()) return heading.textContent.trim();
+            el = el.parentElement;
+        }
+
+        // fallback: check previous siblings for headings
+        el = btn.previousElementSibling;
+        while (el) {
+            if (/H[2-4]/i.test(el.tagName) && el.textContent.trim()) return el.textContent.trim();
+            el = el.previousElementSibling;
+        }
+
+        return 'Service Inquiry';
+    }
+
+    // Attach handlers to buttons whose text contains 'Choose' or 'Learn More'
+    document.querySelectorAll('button').forEach(btn => {
+        const label = (btn.textContent || '').toLowerCase();
+        if (label.includes('choose') || label.includes('learn more') || label.includes('get free consultation')) {
+            btn.addEventListener('click', (e) => {
+                // Prevent default behavior if button was in a form
+                try { e.preventDefault(); } catch (err) {}
+                const service = getServiceNameFromButton(btn);
+                const message = `Hello Ryzite, I am interested in ${service}. Please share details and pricing.`;
+                openWhatsApp(message);
+            });
+        }
+    });
+})();
